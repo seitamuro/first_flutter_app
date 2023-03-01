@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class NextPage extends StatefulWidget {
   @override
@@ -8,6 +9,8 @@ class NextPage extends StatefulWidget {
 class _NextPageState extends State<NextPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(),
+    );
   }
 }
