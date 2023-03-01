@@ -1,3 +1,4 @@
+import 'package:days3_app/next_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -50,6 +51,9 @@ class _MyHomePageState extends State<MyHomePage> {
             return Column(
               children: [
                 ListTile(
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()));
+                  },
                   leading: Icon(Icons.vpn_key),
                   title: Text(titleList[i])
                 ),
