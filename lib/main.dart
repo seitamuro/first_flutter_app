@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-      _counter++;
+      titleList.add("Google");
     });
   }
 
@@ -52,7 +52,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ListTile(
                   leading: Icon(Icons.vpn_key),
                   title: Text(titleList[i])
-                )
+                ),
+                Divider(thickness: 2,),
               ]
             );
           }),
